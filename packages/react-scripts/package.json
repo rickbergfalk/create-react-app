@@ -1,5 +1,5 @@
 {
-  "name": "@sqlpad/react-scripts",
+  "name": "@rickbergfalk/sqlpad-react-scripts",
   "version": "0.0.1",
   "description": "Configuration and scripts for sqlpad's Create React App.",
   "repository": "rickbergfalk/create-react-app",
