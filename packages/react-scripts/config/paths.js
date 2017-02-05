@@ -44,7 +44,7 @@ var nodePaths = (process.env.NODE_PATH || '')
 module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
+  appHtml: resolveApp('public/index-template.html'),
   appIndexJs: resolveApp('client-js/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('client-js'),
@@ -64,7 +64,7 @@ function resolveOwn(relativePath) {
 module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
+  appHtml: resolveApp('public/index-template.html'),
   appIndexJs: resolveApp('client-js/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('client-js'),
@@ -81,7 +81,7 @@ if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) 
   module.exports = {
     appBuild: resolveOwn('../../../build'),
     appPublic: resolveOwn('../template/public'),
-    appHtml: resolveOwn('../template/public/index.html'),
+    appHtml: resolveOwn('../template/public/index-template.html'),
     appIndexJs: resolveOwn('../template/client-js/index.js'),
     appPackageJson: resolveOwn('../package.json'),
     appSrc: resolveOwn('../template/client-js'),
